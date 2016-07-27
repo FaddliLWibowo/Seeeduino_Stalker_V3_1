@@ -26,6 +26,17 @@ We also added 2 toggle switch on RTC circuitry corresponding 2 INT pin of MCU, s
 
 [![Get one now](https://github.com/SeeedDocument/Wio_Node/raw/master/pictures/300px-Get_One_Now_Banner.png)](http://www.seeedstudio.com/Seeeduino-Stalker-V3.1-p-2686.html)
 
+##Features
+----
+- Compatible with Seeeduino (I/O ports use 3.3V Logic). Can be programmed with Arduino Processing language.
+- Onboard Real Time Clock chip **DS1337S** (Socket for a CR1220 coin cell, which acts as a backup power source for RTC)
+- Serial interface with DTR for auto reset during programming when operating in standalone mode. (For programming, UartSBee is not included).
+- microSD card socket
+- I2C Pin header (operation voltage is selectable: 5.0V or 3.3V)
+- Grove connector (operation voltage is selectable: 5.0V or 3.3V)
+- Reset buttons for XBee Modules and ATMega328P
+- **Bee series socket** 2*10 pin 2.0mm pitch (which will mate with one at a time any of the wireless modules: XBee, BluetoothBee, GPSBee or RFBee.)
+
 ##Specicication
 ----
 
@@ -44,6 +55,16 @@ We also added 2 toggle switch on RTC circuitry corresponding 2 INT pin of MCU, s
 |Charging Current		|300mA|
 |Maximum Current on 3.3v port |	800mA|
 |Size of PCB 			|86.74mm x 60.96mm|
+
+##Application Ideas
+----
+
+- Wireless Sensor Network (using [XBee](http://www.seeedstudio.com/wiki/XBee_Pro_Series2_RF_module) bought separately)
+- GPS Logging (using [GPSBee](http://www.seeedstudio.com/wiki/GPS_Bee_kit) bought separately)
+- Data Acquisition System capable of communicating with an App running on iPhone/Android Phone (using [BluetoothBee](http://www.seeedstudio.com/wiki/Bluetooth_Bee) bought separately).
+- RF Remote Control (using [RFBee](http://www.seeedstudio.com/wiki/RFbee_V1.1_-_Wireless_Arduino_compatible_node) bought separately).
+- As a simple standalone Arduino compatible physical computing platform.
+
 
 
 ##Get Started
@@ -73,8 +94,6 @@ If this is your first time to program with a Seeeduino Stalker. You can follow t
 
 ###STEP2: UartSBee and the Driver
 
-You need to install driver for UartSBee, which is like the multi-purpose Swiss Army knife of the Physical Computing world. There is a very detailed procedure to use UartSBee for both Windows and GNU/Linux users [here](http://www.seeedstudio.com/wiki/UartSBee_V4). 
-
 UartSBee is a USB to Serial UART interface which is based on FT232RL from FDTI. Click to download the [driver](http://www.ftdichip.com/FTDrivers.htm) for the board.
 
 In our case, it will perform three functions:
@@ -87,7 +106,12 @@ In our case, it will perform three functions:
 
 Seeeduino Stalker is an Arduino compatible board that with rich function. If you don't have an Arduino IDE, you need to download the latest Arduino software to program the board. 
 
-
+![](https://raw.githubusercontent.com/SeeedDocument/Seeeduino_Stalker_V3_1/master/images/Download_IDE.png)
 
 ###STEP4: Blink
 
+Here we will update a simple code to Stalker. Open your Arduino IDE, open **File > Examples > Basics > Blink**
+
+![](https://raw.githubusercontent.com/SeeedDocument/Seeeduino_Stalker_V3_1/master/images/arduino_blink.png)
+
+Then click on the Upload button, seconds later after the uploading is done, check **L** on the board, it will blink at the frequency of 1s.
