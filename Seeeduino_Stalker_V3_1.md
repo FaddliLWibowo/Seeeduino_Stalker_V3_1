@@ -8,6 +8,8 @@ The main purpose of creating this series is to create an X-bee carrier board so 
 
 Seeeduino Stalker V3.1 is not just a simple update of V3.0.The main surprise you'll find about the board is impressively low power consumption, in sleep mode, the output current of the whole board will be as low as 100uA,This is an upgrade truly derived from users feedback.(we really care about your opinion).let's see how we achieve it.
 
+![](https://raw.githubusercontent.com/SeeedDocument/Seeeduino_Stalker_V3_1/master/images/cover.JPG)
+
 **Optimize RTC Circuitry**
 
 Comparing to V3.0, RTC module of V3.1 can only be powered by button cell instead of powered by both button cell and lithium battery. So that power of the lithium battery can be saved from supplying RTC.
@@ -22,14 +24,7 @@ There is a toggle switch added to X-bee area, which allows you to select either 
 
 We also added 2 toggle switch on RTC circuitry corresponding 2 INT pin of MCU, so that users can easily choose which INT pin to be connected with RTC INT port then activate MCU.
 
-Just like every other revises, we fixed a few bugs.
-
-
-
-
 [![Get one now](https://github.com/SeeedDocument/Wio_Node/raw/master/pictures/300px-Get_One_Now_Banner.png)](http://www.seeedstudio.com/Seeeduino-Stalker-V3.1-p-2686.html)
-
-
 
 ##Specicication
 ----
@@ -49,3 +44,9 @@ Just like every other revises, we fixed a few bugs.
 |Charging Current		|300mA|
 |Maximum Current on 3.3v port |	800mA|
 |Size of PCB 			|86.74mm x 60.96mm|
+
+
+##Get Started
+----
+If this is your first time to program with a Seeeduino Stalker. You can follow the below steps to getting started. Before we start, make sure you have the below things on hand:
+
