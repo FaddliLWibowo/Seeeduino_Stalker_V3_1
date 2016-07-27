@@ -50,3 +50,44 @@ We also added 2 toggle switch on RTC circuitry corresponding 2 INT pin of MCU, s
 ----
 If this is your first time to program with a Seeeduino Stalker. You can follow the below steps to getting started. Before we start, make sure you have the below things on hand:
 
+|Seeeduino Stalker V3.1|UartSBee V4|Mini USB Cable|6pin Cable|
+|----------------------|-----------|--------------|----------|
+|![](https://raw.githubusercontent.com/SeeedDocument/Seeeduino_Stalker_V3_1/master/images/gs_stalker.JPG)|![](https://raw.githubusercontent.com/SeeedDocument/Seeeduino_Stalker_V3_1/master/images/gs_uartsbee.jpg)|![](https://raw.githubusercontent.com/SeeedDocument/Seeeduino_Stalker_V3_1/master/images/gs_miniusb.jpg)|![](https://raw.githubusercontent.com/SeeedDocument/Seeeduino_Stalker_V3_1/master/images/gs_6pincable.jpg)|
+|[GET ONE NOW](http://www.seeedstudio.com/Seeeduino-Stalker-V3.1-p-2686.html)|[GET ONE NOW](http://www.seeedstudio.com/UartSBee-V4-p-688.html)|[GET ONE NOW](http://www.seeedstudio.com/Mini-USB-cable-100cm-p-252.html)|[GET ONE NOW](http://www.seeedstudio.com/6-pin-dual-female-jumper-wire-300mm-(5-PCs-pack)-p-128.html)|
+
+!!!Note
+    UartSBee V4, Mini USB Cable and 6pin cable are not included. 
+
+###STEP1: Hardware Connection
+
+|Seeeduino Stalker|UartSBee V4|
+|-----------------|-----------|
+|	DTR			  |	DTR		  |
+|	TXD			  |	RXD		  |
+|	RXD			  |	TXD		  |
+|	5V			  |	VCC		  |
+|	GND			  |	GND		  |
+
+!!!Note
+	The power switch on UartSbee V4 put to 5V	
+
+###STEP2: UartSBee and the Driver
+
+You need to install driver for UartSBee, which is like the multi-purpose Swiss Army knife of the Physical Computing world. There is a very detailed procedure to use UartSBee for both Windows and GNU/Linux users [here](http://www.seeedstudio.com/wiki/UartSBee_V4). 
+
+UartSBee is a USB to Serial UART interface which is based on FT232RL from FDTI. Click to download the [driver](http://www.ftdichip.com/FTDrivers.htm) for the board.
+
+In our case, it will perform three functions:
+
+- To program the Seeeduino Stalker.
+- To communicate with Seeeduino Stalker.
+- Provide power (from USB power of PC) to Seeeduino Stalker (including any peripherals connected to it).
+
+###STEP3: Arduino IDE
+
+Seeeduino Stalker is an Arduino compatible board that with rich function. If you don't have an Arduino IDE, you need to download the latest Arduino software to program the board. 
+
+
+
+###STEP4: Blink
+
