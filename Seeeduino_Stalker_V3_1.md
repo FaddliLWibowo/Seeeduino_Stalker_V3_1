@@ -29,6 +29,7 @@ We also added 2 toggle switch on RTC circuitry corresponding 2 INT pin of MCU, s
 ##Features
 ----
 - Compatible with Seeeduino (I/O ports use 3.3V Logic). Can be programmed with Arduino Processing language.
+- 
 - Onboard Real Time Clock chip **DS1337S** (Socket for a CR1220 coin cell, which acts as a backup power source for RTC)
 - Serial interface with DTR for auto reset during programming when operating in standalone mode. (For programming, UartSBee is not included).
 - microSD card socket
@@ -40,13 +41,13 @@ We also added 2 toggle switch on RTC circuitry corresponding 2 INT pin of MCU, s
 ##Specicication
 ----
 
-|Parameter|Value|
+|Parameter              |Value          |
 |-------------------	----|---------------|
 |Micro Controller 		|Atmega328P    	|
 |Clock Speed      		|8 MHz         	|
 |I/O Voltage      		|3.3V          	|
 |RTC			  		|DS1337S		|
-|Board for Arduino IDE	| Arduino Pro or Pro Mini (3.3v , 8 MHz)w/ATmega328	|
+|Board for Arduino IDE	|Arduino Pro or Pro Mini (3.3v , 8 MHz)w/ATmega328	|
 |Power Supply			|3.7v LiPo Battery, Use 5VDC solar panel for charging the battery|
 |Power Connector		|2 pin JST/ USB|
 |Connectivity			|I2C, UART, SPI|
@@ -65,6 +66,8 @@ We also added 2 toggle switch on RTC circuitry corresponding 2 INT pin of MCU, s
 - RF Remote Control (using [RFBee](http://www.seeedstudio.com/wiki/RFbee_V1.1_-_Wireless_Arduino_compatible_node) bought separately).
 - As a simple standalone Arduino compatible physical computing platform.
 
+##Hardware Overview
+
 
 
 ##Get Started
@@ -79,7 +82,9 @@ If this is your first time to program with a Seeeduino Stalker. You can follow t
 !!!Note
     UartSBee V4, Mini USB Cable and 6pin cable are not included. 
 
-###STEP1: Hardware Connection
+###STEP1: Connection
+
+Firstly connect Staler to UartSBee via the 6pin jumper wire, then connect UartSBee to a PC via the mini USB cable. 
 
 |Seeeduino Stalker|UartSBee V4|
 |-----------------|-----------|
@@ -106,7 +111,7 @@ In our case, it will perform three functions:
 
 Seeeduino Stalker is an Arduino compatible board that with rich function. If you don't have an Arduino IDE, you need to download the latest Arduino software to program the board. 
 
-![](https://raw.githubusercontent.com/SeeedDocument/Seeeduino_Stalker_V3_1/master/images/Download_IDE.png)
+[![](https://raw.githubusercontent.com/SeeedDocument/Seeeduino_Stalker_V3_1/master/images/Download_IDE.png)](https://www.arduino.cc/en/Main/Software)
 
 ###STEP4: Blink
 
@@ -115,3 +120,22 @@ Here we will update a simple code to Stalker. Open your Arduino IDE, open **File
 ![](https://raw.githubusercontent.com/SeeedDocument/Seeeduino_Stalker_V3_1/master/images/arduino_blink.png)
 
 Then click on the Upload button, seconds later after the uploading is done, check **L** on the board, it will blink at the frequency of 1s.
+
+##RTC
+
+##SD Card
+
+
+##Power Manager
+
+##Bees
+
+##Sleep Mode
+
+##Resources
+---
+* Schematic
+  * Schematic in **Eagle**
+  * Schematic in **PDF**
+* Datasheet
+  * DS130
